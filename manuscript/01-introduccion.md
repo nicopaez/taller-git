@@ -32,15 +32,13 @@ Eso no es posible con Git, pues como ya dijimos antes cada colaborador del proye
 
 
 X> ### Ejercicio 1  
+X>
 X> * El primer conjunto de archivos que versionamos (v1) cuenta con 10 archivos y pesa 0.5 MB.
 X> * En la siguiente versión (v2) agregamos un nuevo archivo que pesa 5 MB.
 X> * En la tercer versión agregamos otros 3 archivos que pesan 1 MB.
 X> * En la cuarta versión eliminamos el archivo de 5 MB que habíamos agregado.
-
-
-¿Cual seria el peso aproximado de descargarse el repositorio para un nuevo colaborador?
-
-Respuesta: 0.5 + 5 + 1 = 6.5 MB
+X>
+X> ** ¿Cual seria el peso aproximado de descargarse el repositorio para un nuevo colaborador?**
 
 
 
