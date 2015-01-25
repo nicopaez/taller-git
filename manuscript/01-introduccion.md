@@ -5,6 +5,9 @@ En este capítulos veremos algunas cuestiones conceptuales que nos servirán par
 ## Sistemas de control de versiones (SCV)
 
 Los SCV centralizados ofrecen un esquema de trabajo cliente-servidor. Hay un único servidor  central que se encarga de almacenar todos los artefactos y versionarlos. Luego quien quiere trabajar sobre los artefactos que están bajo control de versiones debe utilizar un cliente para conectarse al servidor y descargar una versión específica de los artefactos sobre que los que se desea trabajar. Luego de completado el trabajo, se deben deben enviar las modificaciones al servidor central para que puedan ser accedidas por el resto del equipo. 
+La siguiente figura muestra un servidor con varias versiones de un _archivo X_ y dos cliente con distintas versiones de ese _archivo X_. Nótese que cada cliente tiene una única versión del archivo.
+
+![Esquema de un sistema de control de versiones centralizado](images/scv_centralizado.png)
 
 Los SCV distribuidos no tienen un servidor central, sino que cada máquina almacena la totalidad de los artefactos con sus correspondientes versiones. En este sentido cada máquina puede potencialmente jugar el rol de servidor.
 
@@ -32,13 +35,14 @@ Eso no es posible con Git, pues como ya dijimos antes cada colaborador del proye
 
 
 X> ### Ejercicio 1  
+X> Considera la siguiente situación
 X>
 X> * El primer conjunto de archivos que versionamos (v1) cuenta con 10 archivos y pesa 0.5 MB.
 X> * En la siguiente versión (v2) agregamos un nuevo archivo que pesa 5 MB.
 X> * En la tercer versión agregamos otros 3 archivos que pesan 1 MB.
 X> * En la cuarta versión eliminamos el archivo de 5 MB que habíamos agregado.
 X>
-X> ** ¿Cual seria el peso aproximado de descargarse el repositorio para un nuevo colaborador?**
+X> **¿Cual seria el peso aproximado de descargarse el repositorio para un nuevo colaborador?**
 
 
 
